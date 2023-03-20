@@ -1,4 +1,4 @@
-FROM almalinux as buid
+FROM debian:10 as buid
 RUN yum update -y && yum install maven -y
 WORKDIR /opt/shipping
 COPY pom.xml /opt/shipping
